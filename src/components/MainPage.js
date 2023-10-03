@@ -6,7 +6,7 @@ import GameCorner from "./components/GameCorner";
 import Typography from "@mui/material/Typography";
 import Reminders from "./components/Reminders";
 
-function App() {
+function MainPage() {
   const sessionsData = getSessionsData();
   console.log(sessionsData);
   const breakRoomsData = getBreakRoomData();
@@ -14,7 +14,6 @@ function App() {
   const remindersData = getRemindersData();
   return (
     <div className="App">
-      <Header title="Hackathon Project" />
       <Typography
         component="h2"
         variant="h5"
@@ -128,4 +127,4 @@ function App() {
   }
 }
 
-export default App;
+export default MainPage;
